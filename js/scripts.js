@@ -18,6 +18,20 @@ var findReplace = function(sentence, remove, replace) {
       }
     }
   };
-
   return sentenceArray.join(" ");
 };
+
+$(function() {
+  $("form#find-replace").submit(function(event) {
+    var sentence = $("textarea#sentence").val();
+    var remove = $("input#remove").val();
+    var replace = $("input#replacement").val();
+
+    var result = findReplace(sentence, remove, replace);
+
+    $(".return").text("");
+    $(".return").text(result);
+    $("#result").show();
+    event.preventDefault();
+  });
+});
