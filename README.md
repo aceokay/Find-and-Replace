@@ -1,6 +1,6 @@
 #_Find and Replace_
 
-#### _A simple app built to search a large string for smaller string items and replacing them with finally a last specified string., 9/11/2015_
+#### _A simple app built to search a large string for smaller string items and replacing them with finally a last specified string, 9/11/2015_
 
 #### By _Austin Kincaid_
 
@@ -11,7 +11,7 @@ _Users can input a large string and two other terms. One of the extra terms is t
 _Example:_
 * Input text: "Chimps are chimps!"
 * Term to replace: "chimps"
-* Term to replace "chimps" with: deer
+* Term to replace "chimps" with: "deer"
 * Returns: "deer are deer!"
 
 * Runs this in the background: findReplace("Chimps are chimps!", "chimps", "deer")
